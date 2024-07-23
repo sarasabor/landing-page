@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Travel Agency</title>  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">  
+    <style>  
+        /* Custom styles */  
+        .hero {  
+            background-image: url('./travel.jpg');  
+            background-size: cover;  
+            background-position: center;  
+            height: 100vh;  
+            color: white;  
+            display: flex;  
+            align-items: center;  
+            justify-content: center;  
+            text-align: center;  
+        }  
+        .footer {  
+            background-color: #343a40;  
+            color: white;  
+            padding: 1rem 0;  
+        }  
+    </style>  
+</head>  
+<body>  
+
+<!-- Navbar -->  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">  
+    <a class="navbar-brand" href="#">TravelAgency</a>  
+    <div class="collapse navbar-collapse">  
+        <ul class="navbar-nav ml-auto">  
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>  
+            <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>  
+            <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>  
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>  
+        </ul>  
+    </div>  
+</nav>  
+
+<!-- Hero Section -->  
+<div class="hero" id="home">  
+    <div>  
+        <h1>Explore the World</h1>  
+        <p>Your adventure begins here.</p>  
+        <a href="#destinations" class="btn btn-primary btn-lg">Start Exploring</a>  
+    </div>  
+</div>  
+
+<!-- Destinations Section -->  
+<section id="destinations" class="py-5">  
+    <div class="container">  
+        <h2 class="text-center">Popular Destinations</h2>  
+        <div class="row">  
+            <div class="col-md-4">  
+                <div class="card">  
+                    <img src="ville1.jpg" class="card-img-top" alt="Destination 1">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Destination 1</h5>  
+                        <p class="card-text">Brief description of Destination 1.</p>  
+                        <a href="#" class="btn btn-primary">Learn More</a>  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="col-md-4">  
+                <div class="card">  
+                    <img src="ville2.jpg" class="card-img-top" alt="Destination 2">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Destination 2</h5>  
+                        <p class="card-text">Brief description of Destination 2.</p>  
+                        <a href="#" class="btn btn-primary">Learn More</a>  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="col-md-4">  
+                <div class="card">  
+                    <img src="ville3.jpg" class="card-img-top" alt="Destination 3">  
+                    <div class="card-body">  
+                        <h5 class="card-title">Destination 3</h5>  
+                        <p class="card-text">Brief description of Destination 3.</p>  
+                        <a href="#" class="btn btn-primary">Learn More</a>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+</section>  
+
+<!-- Tours Section -->  
+<section id="tours" class="py-5 bg-light">  
+    <div class="container">  
+        <h2 class="text-center">Our Tours</h2>  
+        <div class="accordion" id="tourAccordion">  
+            <div class="card">  
+                <div class="card-header" id="headingOne">  
+                    <h2 class="mb-0">  
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"  
+                                aria-expanded="true" aria-controls="collapseOne">  
+                            Tour Package 1  
+                        </button>  
+                    </h2>  
+                </div>  
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#tourAccordion">  
+                    <div class="card-body">  
+                        Brief description of Tour Package 1. <a href="#" class="btn btn-link">View Details</a>  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="card">  
+                <div class="card-header" id="headingTwo">  
+                    <h2 class="mb-0">  
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"  
+                                aria-expanded="false" aria-controls="collapseTwo">  
+                            Tour Package 2  
+                        </button>  
+                    </h2>  
+                </div>  
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#tourAccordion">  
+                    <div class="card-body">  
+                        Brief description of Tour Package 2. <a href="#" class="btn btn-link">View Details</a>  
+                    </div>  
+                </div>  
+            </div>  
+            <div class="card">  
+                <div class="card-header" id="headingThree">  
+                    <h2 class="mb-0">  
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"  
+                                aria-expanded="false" aria-controls="collapseThree">  
+                            Tour Package 3  
+                        </button>  
+                    </h2>  
+                </div>  
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#tourAccordion">  
+                    <div class="card-body">  
+                        Brief description of Tour Package 3. <a href="#" class="btn btn-link">View Details</a>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+</section>  
+
+<!-- Contact Form -->  
+<section id="contact" class="py-5">  
+    <div class="container">  
+        <h2 class="text-center">Contact Us</h2>  
+        <form>  
+            <div class="form-group">  
+                <label for="name">Name</label>  
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>  
+            </div>  
+            <div class="form-group">  
+                <label for="email">Email</label>  
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>  
+            </div>  
+            <div class="form-group">  
+                <label for="destination">Destination of Interest</label>  
+                <input type="text" class="form-control" id="destination" placeholder="Destination" required>  
+            </div>  
+            <div class="form-group">  
+                <label for="message">Message</label>  
+                <textarea class="form-control" id="message" rows="3" placeholder="Your message" required></textarea>  
+            </div>  
+            <button type="submit" class="btn btn-primary">Send Message</button>  
+        </form>  
+    </div>  
+</section>  
+
+<!-- Footer -->  
+<footer class="footer text-center">  
+    <div class="container">  
+        <p>&copy; 2023 Travel Agency. All rights reserved.</p>  
+        <a href="#" class="text-white">Facebook</a> |   
+        <a href="#" class="text-white">Twitter</a> |   
+        <a href="#" class="text-white">Instagram</a>  
+    </div>  
+</footer>  
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>  
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+</body>  
+</html>  
